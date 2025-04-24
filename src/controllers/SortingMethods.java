@@ -34,25 +34,25 @@ public class SortingMethods {
 
     public void sortByAgeWithInsertion(Person[] persons) {
         for (int i = 1; i < persons.length; i++) {
-            Person key = persons[i];
+            Person d = persons[i];
             int j = i - 1;
-            while (j >= 0 && persons[j].getAge() > key.getAge()) {
+            while (j >= 0 && persons[j].getAge() > d.getAge()) {
                 persons[j + 1] = persons[j];
                 j--;
             }
-            persons[j + 1] = key;
+            persons[j + 1] = d;
         }
     }
 
     public void sortByNameWithInsertion(Person[] persons) {
         for (int i = 1; i < persons.length; i++) {
-            Person key = persons[i];
+            Person c = persons[i];
             int j = i - 1;
-            while (j >= 0 && persons[j].getName().compareTo(key.getName()) > 0) {
+            while (j >= 0 && persons[j].getName().compareTo(c.getName()) > 0) {
                 persons[j + 1] = persons[j];
                 j--;
             }
-            persons[j + 1] = key;
+            persons[j + 1] = c;
         }
     }
 }

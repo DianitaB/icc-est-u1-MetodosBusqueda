@@ -67,5 +67,7 @@ public class View {
         System.out.println("Ingrese el nombre a buscar: ");
         return scanner.nextLine();
     }
-    
+    public Scanner getScanner(){
+        return scanner;
+    }
 }
